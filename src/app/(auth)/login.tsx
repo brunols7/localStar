@@ -15,10 +15,13 @@ export default function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [isSecure, setIsSecure] = useState(true)
-
+  const isFormValid =
+    email.trim() !== '' &&
+    password.trim() !== ''
+  
   const theme = useTheme()
     
-    const styles = StyleSheet.create({
+  const styles = StyleSheet.create({
       container: {
           flex: 1,
           alignItems: 'center',
@@ -79,7 +82,7 @@ export default function Login() {
         loginBtn: {
           width: '100%',
           height: 56,
-          backgroundColor: theme.primary,
+          backgroundColor: isFormValid ? theme.primary : theme.disabledBackground,
           borderRadius: 8,
           alignItems: 'center',
           justifyContent: 'center',
@@ -147,8 +150,9 @@ export default function Login() {
         <TouchableOpacity
           style={styles.loginBtn}
           onPress={handleLogin}
+          disabled={!isFormValid}
         >
-          <Text style={{ color: 'white', fontWeight: 'semibold', fontSize: 18 }}>Entrar</Text>
+          <Text style={{ color: isFormValid ? theme.whiteText : theme.disabledText, fontWeight: 'semibold', fontSize: 18 }}>Entrar</Text>
         </TouchableOpacity>
 
       </View>
