@@ -1,6 +1,6 @@
 import { useTheme } from '@/hooks/use-theme'
 import { router } from 'expo-router'
-import { ChevronLeft, Eye, EyeOff } from 'lucide-react-native'
+import { ChevronLeft, Eye, EyeClosed } from 'lucide-react-native'
 import { useState } from 'react'
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
@@ -71,6 +71,11 @@ export default function Login() {
           paddingHorizontal: 15,
           gap: 8
         },
+        textLable: {
+          fontSize: 14,
+          fontWeight: 'semibold',
+          color: theme.text
+        },
         loginBtn: {
           width: '100%',
           height: 56,
@@ -82,7 +87,7 @@ export default function Login() {
     })
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: theme.background }}>
       <View style={styles.container}>
 
         <View style={styles.headerContainer}>
@@ -101,7 +106,7 @@ export default function Login() {
         <View style={styles.formContainer}>
 
           <View style={styles.labelContainer}>
-            <Text>E-mail</Text>
+            <Text style={styles.textLable}>E-mail</Text>
             <TextInput
               placeholder='Digite seu e-mail'
               value={email}
@@ -109,11 +114,12 @@ export default function Login() {
               keyboardType='email-address'
               autoCapitalize='none'
               style={styles.inputContainer}
+              placeholderTextColor={theme.secondary}
             />
           </View>
 
           <View style={styles.labelContainer}>
-            <Text>Senha</Text>
+            <Text style={styles.textLable}>Senha</Text>
             
             <View style={styles.inputContainer}>
               <TextInput
@@ -123,12 +129,13 @@ export default function Login() {
                 autoCapitalize='none'
                 secureTextEntry={isSecure}
                 style={{ flex: 1, height: '100%' }}
+                placeholderTextColor={theme.secondary}
               />
               
               <TouchableOpacity
                 onPress={() => setIsSecure(!isSecure)}
               >
-                {isSecure ? <Eye size={22}/> : <EyeOff size={22}/> }
+                {isSecure ? <EyeClosed size={22}/> : <Eye size={22}/> }
               </TouchableOpacity>
 
             </View>

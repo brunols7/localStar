@@ -14,6 +14,9 @@ export const Colors = {
     primary: '#0655A0',
     secondary: '#355982',
     textSecondary: '#677383',
+    whiteText: '#FFFFFF',
+    disabledBackground: '#E0E0E0',
+    disabledText: '#A0A0A0'
   },
   dark: {
     text: '#ffffff',
@@ -21,6 +24,9 @@ export const Colors = {
     primary: '#0655A0',
     secondary: '#355982',
     textSecondary: '#B0B4BA',
+    whiteText: '#FFFFFF',
+    disabledBackground: '#E0E0E0',
+    disabledText: '#A0A0A0'
   },
 } as const;
 
