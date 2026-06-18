@@ -19,7 +19,8 @@ export const Colors = {
     disabledText: '#A0A0A0',
     borderColor: '#677383',
     alertBg: '#D8E3F3',
-    error: '#DC2828'
+    error: '#DC2828',
+    badgeBg: '#DAE0E7'
   },
   dark: {
     text: '#ffffff',
@@ -32,7 +33,8 @@ export const Colors = {
     disabledText: '#A0A0A0',
     borderColor: '#677383',
     alertBg: '#D8E3F3',
-    error: '#DC2828'
+    error: '#DC2828',
+    badgeBg: '#DAE0E7'
   },
 } as const;
 
