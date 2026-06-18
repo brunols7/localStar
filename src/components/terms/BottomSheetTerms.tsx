@@ -16,12 +16,12 @@ export default function BottomSheetTerms({ onClose }: Props) {
         },
         title: {
             fontSize: 16,
-            fontWeight: 'semibold',
+            fontWeight: 600,
             color: theme.primary
         },
         text: {
             fontSize: 14,
-            fontWeight: 'semibold',
+            fontWeight: 600,
             color: theme.text
         },
         closeBtn: {
@@ -42,7 +42,7 @@ export default function BottomSheetTerms({ onClose }: Props) {
             <Text style={styles.text}>Você também concorda em seguir as diretrizes da comunidade, mantendo respeito nas interações e não publicando conteúdos ofensivos, discriminatórios ou inadequados.</Text>
             <Text style={styles.text}>As avaliações podem passar por análise automática para garantir um ambiente seguro e acessível para todos.</Text>
             <TouchableOpacity onPress={onClose} style={styles.closeBtn}>
-                <Text style={{ fontWeight: 'semibold', fontSize: 16, color: theme.whiteText }}>Fechar</Text>
+                <Text style={{ fontWeight: 600, fontSize: 16, color: theme.whiteText }}>Fechar</Text>
             </TouchableOpacity>
         </View>
     )

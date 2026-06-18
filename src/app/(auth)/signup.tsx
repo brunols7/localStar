@@ -43,6 +43,8 @@ export default function SignUp() {
     console.log('Senha:', password)
     console.log('Aceitou o termo:', hasAcceptedTerms)
     console.log('Accesibilidades:', accessibilityNeeds)
+
+    router.navigate('/home')
   }
 
   const openTermsModal = () => {
@@ -132,7 +134,7 @@ export default function SignUp() {
         },
         textLable: {
           fontSize: 14,
-          fontWeight: 'semibold',
+          fontWeight: 600,
           color: theme.text
         },
         loginBtn: {
@@ -257,7 +259,7 @@ export default function SignUp() {
               <Text style={styles.termsText}>
                 Ao criar sua conta, você concorda com os{" "}
                 <Text 
-                  style={{ fontWeight: 'semibold', textDecorationLine: 'underline' }}
+                  style={{ fontWeight: 600, textDecorationLine: 'underline' }}
                   onPress={openTermsModal}
                 >
                   Termos de Uso e as Diretrizes da Comunidade
@@ -295,7 +297,7 @@ export default function SignUp() {
               onPress={handleRegister}
               disabled={!isFormValid}
             >
-              <Text style={{ color: !isFormValid ? theme.disabledText : theme.whiteText, fontWeight: 'semibold', fontSize: 18 }}>Criar conta</Text>
+              <Text style={{ color: !isFormValid ? theme.disabledText : theme.whiteText, fontWeight: 600, fontSize: 18 }}>Criar conta</Text>
             </TouchableOpacity>
           </View>
         </ScrollView> 

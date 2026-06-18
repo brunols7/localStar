@@ -16,7 +16,10 @@ export const Colors = {
     textSecondary: '#677383',
     whiteText: '#FFFFFF',
     disabledBackground: '#E0E0E0',
-    disabledText: '#A0A0A0'
+    disabledText: '#A0A0A0',
+    borderColor: '#677383',
+    alertBg: '#D8E3F3',
+    error: '#DC2828'
   },
   dark: {
     text: '#ffffff',
@@ -26,7 +29,10 @@ export const Colors = {
     textSecondary: '#B0B4BA',
     whiteText: '#FFFFFF',
     disabledBackground: '#E0E0E0',
-    disabledText: '#A0A0A0'
+    disabledText: '#A0A0A0',
+    borderColor: '#677383',
+    alertBg: '#D8E3F3',
+    error: '#DC2828'
   },
 } as const;
 

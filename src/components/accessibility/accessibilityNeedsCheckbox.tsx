@@ -25,7 +25,7 @@ export default function AccessibilityNeedsCheckbox({ name, icon: Icon, onPress, 
         }, text:{
             color: isChecked ? theme.whiteText : theme.primary,
             fontSize: 16,
-            fontWeight: 'semibold',
+            fontWeight: 600,
             flex: 1
         },
         checkbox: {

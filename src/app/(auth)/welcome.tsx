@@ -63,8 +63,8 @@ export default function Welcome() {
           <Text style={styles.title}>LocalStar</Text>
           <View style={{alignItems: 'center', gap: 4}}>
             <Image source={require('../../assets/images/img-mobilidade.png')} style={{ width: 326, height: 367}} />
-            <Text style={{ fontSize: 36, fontWeight: 'semibold', color: theme.background }}>Bem-vindo(a)</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'semibold', color: theme.background }}>Como você deseja prosseguir?</Text>
+            <Text style={{ fontSize: 36, fontWeight: 600, color: theme.background }}>Bem-vindo(a)</Text>
+            <Text style={{ fontSize: 20, fontWeight: 600, color: theme.background }}>Como você deseja prosseguir?</Text>
           </View>
         </View>
 
@@ -75,7 +75,7 @@ export default function Welcome() {
           >
             <View style={styles.buttonContent}>
               <LogIn color={theme.primary} size={24}/>
-              <Text style={{ color: theme.primary, fontWeight: 'semibold', fontSize: 18 }}>Entrar</Text>
+              <Text style={{ color: theme.primary, fontWeight: 600, fontSize: 18 }}>Entrar</Text>
             </View>
           </TouchableOpacity>
           <TouchableOpacity
@@ -84,7 +84,7 @@ export default function Welcome() {
           >
             <View style={styles.buttonContent}>
               <UserPlus color={theme.background} size={24}/>
-              <Text style={{ color: theme.background, fontWeight: 'semibold', fontSize: 18 }}>Cadastrar</Text>
+              <Text style={{ color: theme.background, fontWeight: 600, fontSize: 18 }}>Cadastrar</Text>
             </View>
           </TouchableOpacity>
         </View>

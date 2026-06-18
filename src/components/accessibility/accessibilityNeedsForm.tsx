@@ -46,7 +46,7 @@ export default function accessibilityNeedsForm({ accessibilityNeeds, onChange }:
 
     return (
         <View style={styles.container}>
-            <Text style={{ fontSize: 16, fontWeight: 'semibold' }}>Quais são suas necessidades? *</Text>
+            <Text style={{ fontSize: 16, fontWeight: 600 }}>Quais são suas necessidades? *</Text>
             <View style={styles.subtitleContainer}>
                 <Text style={styles.subtitle}>Pode escolher mais de uma!</Text>
                 <Text style={styles.subtitle}>Vamos personalizar os lugares para você.</Text>

@@ -9,7 +9,7 @@ export default function Login() {
 
   const handleLogin = () => {
     console.log('Login with, email:', email, 'password:', password)
-    router.navigate('/')
+    router.navigate('/home')
   }
 
   const [email, setEmail] = useState('')
@@ -76,7 +76,7 @@ export default function Login() {
         },
         textLable: {
           fontSize: 14,
-          fontWeight: 'semibold',
+          fontWeight: 600,
           color: theme.text
         },
         loginBtn: {
@@ -152,7 +152,7 @@ export default function Login() {
           onPress={handleLogin}
           disabled={!isFormValid}
         >
-          <Text style={{ color: isFormValid ? theme.whiteText : theme.disabledText, fontWeight: 'semibold', fontSize: 18 }}>Entrar</Text>
+          <Text style={{ color: isFormValid ? theme.whiteText : theme.disabledText, fontWeight: 600, fontSize: 18 }}>Entrar</Text>
         </TouchableOpacity>
 
       </View>
