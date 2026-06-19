@@ -1,3 +1,4 @@
+import PlaceCard from '@/components/place/PlaceCard'
 import AiAlert from '@/components/ui/aiAlert'
 import { useTheme } from '@/hooks/use-theme'
 import { Search } from 'lucide-react-native'
@@ -66,6 +67,8 @@ export default function Home() {
         </View>
 
         <AiAlert accessibilityNeeds='deficiência visual'/>
+
+        <PlaceCard id='1' name='Atacadista Roldão' distance={1200} facilities={['Corredores amplos', 'Fácil localização de setores', 'Estacionamento acessivel']} averageRating={4.3} reviewCount={4} bannerImageUrl='https://roldao.com.br/wp-content/uploads/2021/11/Novo-Projeto-32.jpg' isFavorite={false} />
 
       </ScrollView>
     </SafeAreaView>

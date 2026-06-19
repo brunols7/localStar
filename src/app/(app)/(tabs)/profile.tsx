@@ -1,4 +1,5 @@
 import { useTheme } from '@/hooks/use-theme'
+import * as Application from 'expo-application'
 import { router } from 'expo-router'
 import { Accessibility, Calendar, LogOut } from 'lucide-react-native'
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
@@ -6,6 +7,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 
 export default function Profile() {
 
+  const appVersion = Application.nativeApplicationVersion;
   const handleLogOut = () => {
     console.log('Saindo...')
     router.navigate('/')
@@ -122,6 +124,11 @@ export default function Profile() {
     profileEmail: {
       fontSize: 16,
       color: theme.textSecondary
+    },
+    versionText: {
+      fontSize: 10,
+      alignSelf: 'center',
+      marginTop: 32
     }
   })
 
@@ -182,6 +189,8 @@ export default function Profile() {
           </TouchableOpacity>
 
         </View>
+
+        <Text style={styles.versionText}>App Version: <Text style={{ fontWeight: 600}}>{appVersion}</Text></Text>
 
       </ScrollView>
     </SafeAreaView>
