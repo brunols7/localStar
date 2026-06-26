@@ -92,4 +92,4 @@ LocalStar is currently under active development and is not accepting external co
 
 ## 📄 License
 
-This project is currently not licensed.
+This project is licensed under the MIT License.
