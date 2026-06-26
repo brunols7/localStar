@@ -1,56 +1,95 @@
-# Welcome to your Expo app 👋
+# ⭐ LocalStar
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> Discover, rate, and share the best places around you.
 
-## Get started
+LocalStar is a mobile application designed to help people discover great places through real community experiences. Whether it's a restaurant, coffee shop, tourist attraction, or hidden gem, LocalStar makes exploring your city easier and more enjoyable.
 
-1. Install dependencies
+> **⚠️ This project is currently under active development.**
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 🚀 Vision
 
-   ```bash
-   npx expo start
-   ```
+Our goal is to build a modern platform where users can:
 
-In the output, you'll find options to open the app in a
+* 📍 Discover nearby places
+* ⭐ Rate and review locations
+* ❤️ Save favorite places
+* 🌎 Explore recommendations from the community
+* 📸 Share experiences with others
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📂 Project Structure
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```text
+src/
+├── app/
+├── components/
+├── constants/
+├── hooks/
+├── types/
+├── utils/
+└── assets/
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+> The project structure may evolve as development progresses.
 
-### Other setup steps
+---
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+## ▶️ Getting Started
 
-## Learn more
+Clone the repository:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+git clone https://github.com/brunols7/localStar.git
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+cd localStar
+```
 
-## Join the community
+Install dependencies:
 
-Join our community of developers creating universal apps.
+```bash
+npm install
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Start the development server:
+
+```bash
+npx expo start
+```
+
+---
+
+## 🛣 Roadmap
+
+* [x] Project initialization
+* [ ] Frontend development *(In Progress)*
+* [ ] Authentication
+* [ ] State management
+* [ ] Backend integration
+* [ ] User profiles
+* [ ] Place reviews
+* [ ] Favorites
+* [ ] Maps integration
+* [ ] Push notifications
+* [ ] Android & iOS release
+
+---
+
+## 🤝 Contributing
+
+LocalStar is currently under active development and is not accepting external contributions at this time.
+
+---
+
+## 👥 Credits
+
+* **Bruno Silva** — Developer • [LinkedIn](https://www.linkedin.com/in/brunols7/)
+* **Mariana Vidal** — UI/UX Designer • [LinkedIn](https://www.linkedin.com/in/marividal/)
+
+---
+
+## 📄 License
+
+This project is currently not licensed.
